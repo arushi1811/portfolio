@@ -1,6 +1,5 @@
 import { GlowingStarsBackgroundCard } from "@/components/ui/glowing-stars";
 import { Title } from "./ui/title";
-import { TracingBeam } from "@/components/ui/tracing-beam";
 
 export default function Home() {
   return (
