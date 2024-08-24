@@ -70,7 +70,7 @@ function Elsa() {
   return (
     <Suspense fallback={<Skeleton />}>
       <a className="px-10 flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100" href="https://www.elsaevents.com/" target="_blank">
-      <h2 className="md:text-5xl font-bold text-amber-900 dark:text-neutral-500" >
+      <h2 className="md:text-5xl font-bold text-neutral-800 dark:text-neutral-500" >
         Elsa Events
       </h2>
       </a>
@@ -91,17 +91,11 @@ function Email() {
 }
 
 const items = [
-  {
-    title: "Orbis",
-    description:
-      "A platform to study with friends | Winner: Tech Together Boston",
-    header: <Orbis />,
-  },
-  {
-    title: "Blendo",
-    description: "An algorithm that creates diverse and high-performing teams | Winner: Hydrangea Hacks",
-    header: <Blendo />,
-  },
+    {
+        title: "Elsa Events",
+        description: "An SEO optimized application for an events company",
+        header: <Elsa />,
+      },
   {
     title: "ASL Play",
     description: "An app to learn sign language | Winner: Best Gamification by Microsoft",
@@ -114,9 +108,15 @@ const items = [
     header: <Acme />,
   },
   {
-    title: "Elsa Events",
-    description: "An SEO optimized application for an events company",
-    header: <Elsa />,
+    title: "Orbis",
+    description:
+      "A platform to study with friends | Winner: Tech Together Boston",
+    header: <Orbis />,
+  },
+  {
+    title: "Blendo",
+    description: "An algorithm that creates diverse and high-performing teams | Winner: Hydrangea Hacks",
+    header: <Blendo />,
   },
   {
     title: "Email Template",
