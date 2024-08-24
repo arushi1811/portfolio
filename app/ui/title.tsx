@@ -2,7 +2,7 @@
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import me from './memoji.svg'
+import me from '@/public/memoji.svg'
 
 export function Title() {
   return (
@@ -29,7 +29,7 @@ export function Title() {
         }}
         className="text-4xl px-4 md:text-6xl lg:text-7xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center"
         >
-       Hi! I'm{" "}
+       Hi! I&apos;m{" "}
         <Highlight className="text-black dark:text-white">
           Arushi
         </Highlight>

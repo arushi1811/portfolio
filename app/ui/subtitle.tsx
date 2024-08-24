@@ -26,8 +26,8 @@ readonly descr?: ReadonlyArray<string>}) {
       >
         {before ? before : ''}
         <Highlight className="text-black dark:text-white">{highlight ? highlight : ''}</Highlight> {after ? after : ''}
-        {descr?.map((desc) => (
-            <p className="font-normal pt-4 text-sm md:text-base lg:text-lg antialiased text-justify">
+        {descr?.map((desc, idx) => (
+            <p key={idx} className="font-normal pt-4 text-sm md:text-base lg:text-lg antialiased text-justify">
                 {desc}
             </p>
         ))}

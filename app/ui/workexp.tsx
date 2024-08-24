@@ -1,7 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import me from "./memoji.svg";
 
 function Checkbox() {
   return (
@@ -48,14 +46,14 @@ export function Workexp() {
               production-ready code.
             </li>
           </ul>
-          <h1 className="mb-4 text-lg font-bold text-gray-900 dark:text-white md:text-xl lg:text-2xl flex items-center pt-4">
+          <h2 className="mb-4 text-lg font-bold text-gray-900 dark:text-white md:text-xl lg:text-2xl flex items-center pt-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
               Tech Stack:{"  "}
               <span className="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 React | TypeScript | AWS | MaterialUI | MERN
               </span>
             </span>
-          </h1>
+          </h2>
         </div>
       ),
     },
@@ -89,14 +87,14 @@ export function Workexp() {
               pseudo-classes and pseudo-elements.
             </li>
           </ul>
-          <h1 className="mb-4 text-lg font-bold text-gray-900 dark:text-white md:text-xl lg:text-2xl flex items-center pt-4">
+          <h2 className="mb-4 text-lg font-bold text-gray-900 dark:text-white md:text-xl lg:text-2xl flex items-center pt-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
               Tech Stack:{"  "}
               <span className="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 React | TypeScript | SCSS | SheetJS
               </span>
             </span>
-          </h1>
+          </h2>
         </div>
       ),
     },
@@ -136,14 +134,14 @@ export function Workexp() {
             Implemented unit-tests using Jest and integration tests using Playwright.
           </li>
         </ul>
-        <h1 className="mb-4 text-lg font-bold text-gray-900 dark:text-white md:text-xl lg:text-2xl flex items-center pt-4">
+        <h2 className="mb-4 text-lg font-bold text-gray-900 dark:text-white md:text-xl lg:text-2xl flex items-center pt-4">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
             Tech Stack:{"  "}
             <span className="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
               React | TypeScript | MaterialUI | AG Grid | Java | Playwright | Jest
             </span>
           </span>
-        </h1>
+        </h2>
       </div>
       ),
     },

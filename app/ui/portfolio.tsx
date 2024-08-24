@@ -1,15 +1,6 @@
 import { cn } from "@/lib/utils";
 import React, { Suspense } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
 import Image from "next/image";
 import orbis from "./orbis.svg";
 import asl from "./asl.svg";
@@ -23,7 +14,6 @@ export function Portfolio() {
           title={item.title}
           description={item.description}
           header={item.header}
-          icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
       ))}
@@ -67,10 +57,10 @@ function ASL() {
 function Acme() {
   return (
     <Suspense fallback={<Skeleton />}>
-      <a className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center" href="https://arushi1811.github.io/acme/#" target="_blank">
-      <h1 className="md:text-5xl font-bold text-neutral-500 dark:text-neutral-500" >
+      <a className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100" href="https://arushi1811.github.io/acme/#" target="_blank">
+      <h2 className="md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 " >
         Acme Co.
-      </h1>
+      </h2>
       </a>
     </Suspense>
   );
@@ -79,10 +69,10 @@ function Acme() {
 function Elsa() {
   return (
     <Suspense fallback={<Skeleton />}>
-      <a className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center" href="https://www.elsaevents.com/" target="_blank">
-      <h1 className="md:text-5xl font-bold text-amber-900 dark:text-neutral-500" >
+      <a className="px-10 flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100" href="https://www.elsaevents.com/" target="_blank">
+      <h2 className="md:text-5xl font-bold text-amber-900 dark:text-neutral-500" >
         Elsa Events
-      </h1>
+      </h2>
       </a>
     </Suspense>
   );
@@ -91,10 +81,10 @@ function Elsa() {
 function Email() {
   return (
     <Suspense fallback={<Skeleton />}>
-      <a className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center" href="https://github.com/arushi1811/grid-featured-component" target="_blank">
-      <h1 className="md:text-5xl font-bold text-neutral-800 dark:text-neutral-500" >
+      <a className="px-10 flex flex-1 w-full h-full min-h-[6rem] rounded-xl justify-center items-center bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100" href="https://github.com/arushi1811/grid-featured-component" target="_blank">
+      <h2 className="md:text-5xl font-bold text-neutral-800 dark:text-neutral-500" >
         Email Marketing
-      </h1>
+      </h2>
       </a>
     </Suspense>
   );
